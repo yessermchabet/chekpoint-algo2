@@ -3,6 +3,7 @@ VAR
      T : ARRAY_OF INTEGER[] := [2,10,3,6,5];
      D : ARRAY_OF INTEGER[] := [5,3,4,1];
      sum : INTEGER := 0;
+    H : HASH_TABLE<INTEGER,INTEGER>
 BEGIN
     
     FOR i FROM 1 TO T.length STEP 1  DO
@@ -14,6 +15,8 @@ BEGIN
             END_FOR
 
     END_FOR
+
+
 
     
 END

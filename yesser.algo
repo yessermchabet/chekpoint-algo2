@@ -1,0 +1,19 @@
+ALGORITHM somme commun
+VAR
+     T : ARRAY_OF INTEGER[] := [2,10,3,6,5];
+     D : ARRAY_OF INTEGER[] := [5,3,4,1];
+     sum : INTEGER := 0;
+BEGIN
+    
+    FOR i FROM 1 TO T.length STEP 1  DO
+
+            FOR j FROM 1 TO D.length STEP 1  DO
+                IF (T[i] = D[j]) THEN
+                    sum := sum + T[i] *2
+                END_IF
+            END_FOR
+
+    END_FOR
+
+    
+END
